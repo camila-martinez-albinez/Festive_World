@@ -1,0 +1,66 @@
+:root{
+    --color1: #ffdee7; /*rosa bajo*/
+    --color2: #e8abbb; /*rosa fuerte*/
+    --color3: #c60000; /*ladrillo oscuro*/
+    --color4: #440000; /*ladrillo*/
+    --color5: #ff7cd6; /*fuxia*/
+    --color6: #e23a24; /*rosa medio*/
+    --color7: #eda663; /*naranja*/
+    --color8: #f5dbdb; /*crema*/
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    text-align: justify;
+    font-family: 'Poppins';
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Dancing Script';
+    text-align: center;
+}
+.btn-danger{
+    background-color: var(--color2);
+    border-color: var(--color2);
+}
+.btn-danger:hover{
+    background-color: var(--color6);
+    border-color: var(--color6);
+}
+h1{
+    margin: 0;
+    font-size: 30px;
+}
+.topbar{
+    font-family: 'Dancing Script' !important;
+    background-color: var(--color2);
+}
+
+.pie{
+    background-color: var(--color8);
+}
+.pie a{
+    text-decoration: none;
+    color:var(--color4);
+}
+.pie ul{
+    list-style: none;
+}
+.pie i{
+    color: var(--color2);
+    margin-right: 5px;
+    display: inline-block;
+}
+footer{
+    background-color: var(--color2);
+}
+.eventos{
+    background-color: var(--color1);
+}
+.example{
+    background-color: var(--color1);
+}
+.redes i{
+    font-size: 40px;
+    color:var(--color2)
+}

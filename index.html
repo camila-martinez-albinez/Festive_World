@@ -1,0 +1,256 @@
+<!--Web Html5-->
+<!DOCTYPE html>
+<!--Idioma Español-->
+<html lang="es">
+<head>
+  <!--Juego de Carácteres-->
+  <meta charset="utf-8">
+  <!--Web Adaptable a cualquier tamaño de dispositivo-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!--Fuentes tipográficas de google - google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+  
+  <!--CSS Bootstrap desde su repositorio (CDN)-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  
+  <!--Título de la página-->
+  <title> FESTIVE WORLD </title>
+
+  <!--Para trabajar con iconos de fontawesome-->
+  <script src="https://kit.fontawesome.com/44acb18422.js" crossorigin="anonymous"></script>
+
+  <!--Hoja de Estilos css propia-->
+  <link rel="stylesheet" href="css/estilos.css">
+  <!--ícono principal-->
+  <link rel="icon" href="IMAGENES/Pastelito_logo.png">
+</head>
+<body>
+  <!--Titulo de la página-->
+  <div class="topbar text-white">
+    <h1>.:. Festive World .:.</h1>
+  </div>
+  <!--Barra de menú (busqueda)-->
+  <div class="top">
+    <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <!--Incluir la imagen en la barra menú-->
+            <a class="navbar-brand" href="#">
+              <img height="80px" src="imagenes/Pastelito_logo.png" alt="">
+            </a>
+            <!--Botón desplegable cuando la pantalla es mediana o pequeña-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Eventos
+                  </a>
+                  <!--Listado de páginas para el menú-->
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="fiesta_infantil.html">Fiesta infantil</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="quinceañero.html">Quinceañero</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="babyshower.html">Baby Shower</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="primera_comunion.html">Primera Comunión</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Servicios
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="pañolenci.html">Recuerdos de Pañolenci</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="scrapbook.html ">Scrapbook</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>    
+      </div>
+    </div>
+  </div>
+  
+  <Banner de imagenes-->
+  <section class="banner">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/banner/festive world ubicanos.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/banner/festive world quienes somos.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/banner/decoramostuevento1.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section id="quienessomos" class="misionvision container">
+    <div class="row my-5">
+      <div class="col-md-6">
+        <h3>Nuestra Visión</h3>
+        <p>Ser una empresa acreditada con reconocidos estándares de calidad nacional. Ampliar nuestros horizontes para llevar nuestro servicio a todo de tipo de lugares y culturas. Somos una comunidad en constante crecimiento, sumamos apoyo de nuestros colaboradores para brindarte un servicio más completo en la organización de tu evento. 
+          Te animamos a formar parte de nuestra familia, juntos lograremos crear sonrisas y momentos inolvidables. 
+          </p>
+      </div>
+      <div class="col-md-6">
+        <h3>Nuestra Misión</h3>
+        <p>Brindar a todos nuestros clientes un servicio de excelencia, haciendo de cada una de sus celebraciones una experiencia inolvidable. Ofrecemos una variedad de artículos y bienes para ambientar todo tipo de eventos: Fiestas infantiles, quinceañeros, oraciones, bautizos ¡Si puedes soñarlo, podemos lograrlo! Cada fiesta es única y original, por ello, personalizamos nuestro trabajo en base a cada una de tus exigencias y requerimientos. Puedes encontrar algunos de nuestros proyectos distribuidos por temática. </p>
+      </div>
+    </div>
+  </section>
+
+  <!--Tarjetas con Bootstrap de EVENTOS-->
+  <section id="eventos" class="eventos container my-5">
+    <hr>
+    <h2 class="my-2">Nuestros Eventos</h2>
+    <div class="container">
+      <div class="row">
+        <!--Tarjeta Fiesta infantil-->
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center">
+            <img src="IMAGENES/Disney princesas/Rapunzel/bici.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Fiesta infantil</h4>
+              <p class="card-text">Tenemos todo lo necesario para hacer de la fiesta de tu pequeño o pequeña un día mágico y de ensueño. Puedes escoger entre una amplia variedad de temáticas, solo dinos lo que deseas incluir y nosotros lo haremos realidad. Visita nuestra galería de fotos con muestras representativas de nuestro trabajo.</p>
+              <a href="fiesta_infantil.html" class="btn btn-danger">Ver Más</a>
+            </div>
+          </div>
+        </div>
+        <!--Tarjeta quinceañero-->
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center">
+            <img src="imagenes/Quinceañero/Quinceañero.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Quinceañeros</h4>
+              <p class="card-text">Hay momentos que solo pasan una vez en la vida, una oportunidad única de brillar y recibir bellas sorpresas. Celebra esta ocasión con nosotros y nos encargaremos de hacer especial ese paso tan importante en tu vida que abre las puertas hacia un nuevo comienzo.</p>
+              <a href="quinceañero.html" class="btn btn-danger">Ver Más</a>
+            </div>
+          </div>
+        </div>
+        <!--Tarjeta baby shower-->
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center">
+            <img src="imagenes/BabyShower/BabyShower.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Baby Shower</h4>
+              <p class="card-text">No hay nada más significativo que darle la bienvenida como se debe a un nuevo integrante de la familia. Asegúrate con nuestra amplia gama de artículos, servicios y recuerdos de que todo sea perfecto para esta ocasión.</p>
+              <a href="babyshower.html" class="btn btn-danger">Ver Más</a>
+            </div>
+          </div>
+        </div>
+        <!--Primera comunión-->
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center">
+            <img src="imagenes/PrimeraComunion/3.JPG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Primera Comunión</h4>
+              <p class="card-text">¿Deseas entonces un ambiente agradable y cálido para compartir momentos inolvidables con tu familia y amigos más cercanos? No hay problema, desde espectáculos emocionantes hasta oraciones y festividades religiosas, llevamos un servicio de calidad sea cual sea el tipo de evento que quieras realizar.</p>
+              <a href="primera_comunion.html" class="btn btn-danger">Ver Más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </section>
+
+  <!--Tarjetas con Bootstrap de SERVICIOS-->
+  <section id="servicios" class="servicios container my-5">
+    <h2>Nuestros Servicios</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card text-center">
+            <img src="imagenes/Muñequitos pañolenci/pañolenci.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Recuerdos de Pañolenci</h4>
+              <p class="card-text">Realizamos muñequitos de pañolenci con todo tipo de temáticas. Un recuerdo perfecto para todo tipo de festividad.</p>
+              <a href="pañolenci.html" class="btn btn-danger">Ver Más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card text-center">
+            <img src="imagenes/scrapbook/scrapbook.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">ScrapBook</h4>
+              <p class="card-text">Explora nuestros tableros con la variedad de cajas, tarjetas y álbumes que tenemos para ofrecerte. </p>
+              <a href="scrapbook.html" class="btn btn-danger">Ver Más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Primera sección del pie de pagina-->
+  <section class="pie py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Información</h3>
+          <ul>
+            <li><i class="fa-solid fa-users"></i><a href="#quienessomos"> ¿Quiénes somos? </a></li>
+            <li><i class="fa-solid fa-music"></i><a href="#eventos">Eventos</a></li>
+            <li><i class="fa-solid fa-list"></i><a href="#servicios">Servicios</a></li>
+            <li><i class="fa-solid fa-mobile"></i></i><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 text-center">
+          <h3>Festive World</h3>
+            <img height="100px" src="imagenes/Pastelito_logo.png" alt="">
+            <p>Decoramos tu evento dónde y cuándo quieras</p>
+        </div>
+        <div class="col-md-3 redes text-center">
+          <h3>Síguenos en:</h3>
+          <p>Instagram</p>
+          <a href="https://www.instagram.com/_festive_world_/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        <div class="col-md-3">
+          <h3>Contáctanos</h3>
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i> cmartinezalbinez@gmail.com</li>
+            <li><i class="fa-solid fa-mobile"></i> 946-685-321</li>
+            <li><i class="fa-solid fa-house"></i>Castilla - Piura</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-2">
+    Festive World &copy; Todos los derechos reservados
+  </footer>
+  
+  <!--Java Scritp de Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
